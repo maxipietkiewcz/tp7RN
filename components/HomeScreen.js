@@ -1,18 +1,22 @@
 import React from "react";
-import { View, Text, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenido</Text>
-      <Button
-        title="Ver Lista de Tareas"
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate("TaskList")}
-      />
-      <Button
-        title="Configuraciones"
+      >
+        <Text style={styles.buttonText}>Ver Lista de Tareas</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
         onPress={() => navigation.navigate("Settings")}
-      />
+      >
+        <Text style={styles.buttonText}>Configuraciones</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -26,5 +30,15 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     marginBottom: 16,
+  },
+  button: {
+    marginBottom: 16,
+    padding: 10,
+    backgroundColor: "#007BFF",
+    borderRadius: 8,
+  },
+  buttonText: {
+    color: "#FFFFFF",
+    fontSize: 16,
   },
 });

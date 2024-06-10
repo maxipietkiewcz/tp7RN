@@ -5,7 +5,6 @@ import {
   Text,
   TouchableOpacity,
   StyleSheet,
-  Button,
 } from "react-native";
 import tasks from "../data/tasks.json";
 
@@ -33,10 +32,12 @@ export default function TaskListScreen({ navigation }) {
         renderItem={renderTask}
         keyExtractor={(item) => item.titulo}
       />
-      <Button
-        title="Agregar Tarea"
+      <TouchableOpacity
+        style={styles.addButton}
         onPress={() => navigation.navigate("AddTask")}
-      />
+      >
+        <Text style={styles.addButtonText}>Agregar Tarea</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -55,5 +56,16 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: "bold",
+  },
+  addButton: {
+    marginTop: 16,
+    padding: 16,
+    backgroundColor: "#007BFF",
+    borderRadius: 8,
+    alignItems: "center",
+  },
+  addButtonText: {
+    color: "#FFFFFF",
+    fontSize: 16,
   },
 });
