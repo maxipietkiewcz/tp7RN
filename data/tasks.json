@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Tarea 1",
+    "descripcion": "Descripción de la tarea 1",
+    "autor": "Autor 1",
+    "fecha": "2024-01-01"
+  },
+  {
+    "titulo": "Tarea 2",
+    "descripcion": "Descripción de la tarea 2",
+    "autor": "Autor 2",
+    "fecha": "2024-01-02"
+  },
+  {
+    "titulo": "Tarea 3",
+    "descripcion": "Descripción de la tarea 3",
+    "autor": "Autor 3",
+    "fecha": "2024-01-03"
+  },
+  {
+    "titulo": "Tarea 4",
+    "descripcion": "Descripción de la tarea 4",
+    "autor": "Autor 4",
+    "fecha": "2024-01-04"
+  },
+  {
+    "titulo": "Tarea 5",
+    "descripcion": "Descripción de la tarea 5",
+    "autor": "Autor 5",
+    "fecha": "2024-01-05"
+  }
+]
