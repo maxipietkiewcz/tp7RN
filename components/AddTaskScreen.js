@@ -1,4 +1,3 @@
-// components/AddTaskScreen.js
 import React, { useState, useContext } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { TextInput, Button } from "react-native-paper";
