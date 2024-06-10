@@ -23,3 +23,9 @@ npm i
 ```
 npx expo start --tunnel
 ```
+
+o
+
+```
+npm run tunnel
+```
